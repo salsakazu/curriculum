@@ -1,4 +1,4 @@
-<?php>
+<?php
 
 $fruit = array(
     'りんご' => 150,
@@ -13,8 +13,12 @@ function getPrice($value, $num) {
     return $total;  
 }
 
-foreach ($fruit as $key => $total)[
-    echo $key.'は'$total.'円です。';
-]
+$i=0;
+foreach ($fruit as $key => $value){
+    echo $key.'は'getPrice($value,$num[$i]).'円です。';
+    echo "<br>";
+    $i++;
 
-<?>
+}
+
+?>
