@@ -3,7 +3,7 @@
 $fruit = array(
     'りんご' => 150,
     'みかん' => 75,
-    '桃' => 150
+    'もも' => 1500
 );
 
 $num = [2, 2, 2];
@@ -15,7 +15,7 @@ function getPrice($value, $num) {
 
 $i=0;
 foreach ($fruit as $key => $value){
-    echo $key.'は'getPrice($value,$num[$i]).'円です。';
+    echo $key.'は'.getPrice($value,$num[$i]).'円です。';
     echo "<br>";
     $i++;
 
