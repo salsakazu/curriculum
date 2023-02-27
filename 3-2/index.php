@@ -6,14 +6,15 @@ $fruit = array(
     '桃' => 150
 );
 
-$num = [リンゴの個数, みかんの個数, 桃の個数];
+$num = [2, 2, 2];
 
-forreach ($fruit as $key => $value)[
-    function getPrice($price, $num) {
-        $total = ?????? ; /* 単価と個数から合計値を計算 */
-        return $total;  /* 合計値を返す */
-    }
-    echo $key.'は'$value.'円です。';
+function getPrice($value, $num) {
+    $total = $value*$num;
+    return $total;  
+}
+
+foreach ($fruit as $key => $total)[
+    echo $key.'は'$total.'円です。';
 ]
 
 <?>
