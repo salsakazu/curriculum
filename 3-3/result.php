@@ -1,23 +1,50 @@
 <?php
-$num= $_POST['num'];
 
-    echo '選ばれた数字は'.$num.;
-    
-    $fortune = array(
-        '0'=> 凶,
-        '1'=> 小吉,
-        '2'=> 小吉,
-        '3'=> 小吉,
-        '4'=> 中吉,
-        '5'=> 中吉,
-        '6'=> 中吉,
-        '7'=> 吉,
-        '8'=> 吉,
-        '9'=> 大吉,
-         );
+$num = $_POST['num'];
+
+?>
+
+<p><?php echo date("Y/m/d", time());>の運勢は<br>
+
+選ばれた数字は<?php 
+
+$array = str_split($num,1); //入力された数字の羅列を1区切りずつ配列に変換して配列$arrayを設定。
+
+$choose = array_rand($array,1); //その配列からランダムにキーを一つを選んで変数$chooseに格納。
+
+$result = $array[$choose]; //そのキーの値を変数$resultに入れる。
+
+echo $result;
+
+?>
+
+<?php 
+
+if($result == 0){
+
+    echo "凶";
+
+}elseif($result >= 1 and $result <= 3){
+
+    echo "小吉";
+
+}elseif($result >= 4 and $result <= 6){
+
+    echo "中吉";
+
+}elseif($result >= 7 and $result <= 8){
+
+    echo "吉";
+
+}else{
+
+    echo "大吉";
+
+}
+
+?>
+
+</p>
+
          
-    foreach ($fortune as $key = $value){
-    '選ばれた数字は'echo .$value.;
-    } 
-    echo date("Y年m月d日", time());
 ?>
