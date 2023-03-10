@@ -21,11 +21,11 @@ $correctAns3 = $question3_arry[1];
 
 <h2>①ネットワークのポート番号は何番？</h2>
 <!--③ 問題のradioボタンを「foreach」を使って作成する-->
-<form action="answer2.php" method="post">
+<form action="answer.php" method="post">
 
 <?php
 
-foreach ($question1_arry as $value1) { 
+foreach ($question1_arry as $value1) { ?>
 
 <input type="radio" name="Ans1"
 
@@ -39,7 +39,7 @@ value="<?php echo $value1;?>">
 <!--③ 問題のradioボタンを「foreach」を使って作成する-->
 <?php
 
-foreach ($question2_arry as $value2) { 
+foreach ($question2_arry as $value2) { ?>
 
 <input type="radio" name="Ans2"
 
@@ -53,7 +53,7 @@ value="<?php echo $value2;?>">
 <!--③ 問題のradioボタンを「foreach」を使って作成する-->
 <?php
 
-foreach ($question3_arry as $value3) { 
+foreach ($question3_arry as $value3) { ?>
 
 <input type="radio" name="Ans3"
 
