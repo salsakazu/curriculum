@@ -5,11 +5,10 @@
 
 //選択した回答と正解が一致していれば「正解！」、一致していなければ「残念・・・」と出力される処理を組んだ関数を作成する
 ?>
-$name = $_POST['name'];
-<p><!--POST通信で送られてきた名前を表示--><?php echo $name;?>さんの結果は・・・？</p>
+<?php $name = $_POST['name']; ?>  
+<p><?php echo $name;?>さんの結果は・・・？</p>
 
-
-<php?
+<?php
 $Ans1 = $_POST['Ans1'];
 $Ans2 = $_POST['Ans2'];
 $Ans3 = $_POST['Ans3'];
