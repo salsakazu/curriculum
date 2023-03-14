@@ -1,3 +1,5 @@
+<link rel="stylesheet" href="style.css">
+
 <?php
 $name = $_POST['name'];
 $question1_arry = ["80", "22", "20", "21"];
@@ -13,9 +15,9 @@ $correctAns3 = $question3_arry[1];
 <h2>①ネットワークのポート番号は何番？</h2>
 <!--③ 問題のradioボタンを「foreach」を使って作成する-->
 <form action="answer.php" method="post">
-<?php foreach ($question1_arry as $value1) ?>
+<?php foreach ($question1_arry as $value1) {?>
 <input type="radio" name="Ans1" value="<?php echo $value1;?>">
-<?php echo $value1;?>
+<?php echo $value1;}?>
 
 <h2>②Webページを作成するための言語は？</h2>
 <!--③ 問題のradioボタンを「foreach」を使って作成する-->
